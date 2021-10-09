@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_graph.xml"
+    app:startDestination="@id/articlesFragment">
+
+    <fragment
+        android:id="@+id/articlesFragment"
+        android:name="com.fahmy.news.presentation.ui.articles.ArticlesFragment"
+        android:label="ArticlesFragment">
+        <action
+            android:id="@+id/action_articlesFragment_to_articleDetailsFragment2"
+            app:destination="@id/articleDetailsFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/articleDetailsFragment2"
+        android:name="com.fahmy.news.presentation.ui.articleDetails.ArticleDetailsFragment"
+        android:label="ArticleDetailsFragment" />
+</navigation>
